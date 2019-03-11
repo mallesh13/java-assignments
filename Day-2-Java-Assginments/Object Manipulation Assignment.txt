@@ -1,0 +1,45 @@
+Consider a Rectangle Shape.
+Identify its properties and behaviours and implement the same.
+Write a Test Cases to check if the behaviours(methods) are implemented properly.
+If their are 2 Rectangle objects of different sizes than we should be able to check if they are having same area or not.
+
+Test the Program with different combinations test cases possible.
+
+--------------------------------------------------------------------------------------------
+
+Write the definition for a class called Complex that has floating point properties for storing real and imaginary parts. The class has the following behaviours/services/methods:
+void set(float, float) to set the specified value in object
+void disp() to display complex number object
+complex sum() to sum two complex numbers & return complex number
+1. Write the definitions for each of the above member functions.
+2. Write a ComplexTest class with main function to create three complex number objects. Set the value in two objects and call sum() to calculate sum and assign it in third object. Display all complex numbers.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+Write the definition for a class called Distance that has properties feet as integer  and inches as float. The class has the following behaviours/services/methods:
+void set(int, float) to give value to object
+void disp() to display distance in feet and inches
+Distance add(Distance) to sum two distances & return distance
+1. Write the definitions for each of the above member functions.
+2. Write DistanceTest class with main function to create three Distance objects. Set the value in two objects and call add() to calculate sum and assign it in third object. Display all distances.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Write the definition for a class called Time that has hours and minutes as integer. The class has the following behaviours/services/methods:
+void setTime(int, int) to set the specified value in object
+void showTime() to display time object
+time sum(time) to sum two time object & return time
+1. Write the definitions for each of the above member functions.
+2. Write main function to create three time objects. Set the value in two objects and call sum() to calculate sum and assign it in third object. Display all time objects.
+
+
+
+
+
+
+
+
+
+
+
+
