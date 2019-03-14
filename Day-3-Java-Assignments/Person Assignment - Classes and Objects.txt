@@ -1,0 +1,50 @@
+Complete the implementation of the given class:-
+
+
+class Person
+{ 
+	private String name; // data member to store the name of a person.
+	private Date dob; // data member to store the date of birth of a person.
+	public Person(String n, int d, int m, int y) //constructor to initialize Person objects
+	{
+		//initialize the data members of the current Person object using the parameters. 
+	}
+	public void display()// method to display the details of a person.
+	{
+		//Person details should be displayed in the following format:
+		//Name: Person Name
+		//Date Of Birth: dd/mm/yyyy
+		//Age: ... Years, ... Months, ... Days
+	}
+	public void olderOne(Person p) //method to identify the older of the two persons.
+	{
+		//Older one of the invoking and given person object is identified and its details are 
+		//displayed in the following format:
+		//.... is older than .... by ... years, ... months and ... days.
+	}
+}
+
+
+
+
+Define the class named PersonTest  which contains main() method. In the main() method, 2 Person objects are created, their details are displayed and the older one among them is identifed and displayed; as follows below:-
+
+NOTE:-Do not forget to write TestCases for method "olderOne(person)".
+
+Let the Person Object be initialized by values ("Ram", 5, 6, 1980) and ("Shyam", 2, 3, 1987) 
+
+First Person Details: 
+Name: Ram
+Date of Birth: 5/6/1980
+Age: ... Years, ... Months, ... Days //actual values as per current date should be displayed.
+
+Second Person Details: 
+Name: Shayam 
+Date of Birth: 2/3/1987
+Age: ... Years, ... Months, ... Days //actual values as per current date should be displayed.
+
+Ram is older than Shyam by 6 Years, 8 Months, 25 Days
+
+
+					   
+								
