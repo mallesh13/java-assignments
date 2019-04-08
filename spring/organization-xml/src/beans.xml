@@ -1,0 +1,59 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+<bean id = "details" class = "com.capgemini.spring.organization.Organization">
+      		<constructor-arg index = "0" value = "1001" type="int"/>
+     		<constructor-arg index = "1" value = "All india" type="String"/>
+     		<constructor-arg index = "2" value = "250000" type="double"/>
+		<constructor-arg index = "3" ref ="address"/>
+		<constructor-arg index = "4">
+			<list>
+			<value> director1</value>
+			<value> director2</value>
+			<value> director3</value>
+			<value> director4</value>
+			</list>
+		</constructor-arg>
+		<constructor-arg index = "5">
+			<set>
+			<value> branch1 </value>
+			<value>	branch2 </value>
+			<value> branch3 </value>
+			<value> branch4 </value>
+			</set>
+		</constructor-arg>		
+		<constructor-arg index="6">  
+			<map>  
+			<entry key="branch1 "  value="CSE" /> 
+			<entry key="branch2 " value="EEE" /> 
+			<entry key="branch3 " value="ECE" />  
+			</map>  
+		</constructor-arg>
+		<constructor-arg index="7" ref="ip">
+		</constructor-arg>
+		<constructor-arg index="8" ref="database">
+		</constructor-arg>
+   	</bean>
+
+	<util:properties id="ip" location="ip.properties"/>
+	<util:properties id="database" location="db.properties"/>
+
+	<bean id="address" class="com.capgemini.spring.organization.Address">
+		<constructor-arg index="0" type="String" value="Hyderabad"/>
+		<constructor-arg index="1" type="String" value="Telangana"/>
+		<constructor-arg index="2" type="String" value="India"/>
+	</bean>
+	
+		
+	
+
+
+
+
+
+
+</beans>

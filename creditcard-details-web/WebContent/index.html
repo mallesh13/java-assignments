@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Credit card</title>
+</head>
+<body>
+
+	<h2>Credit card details</h2>
+	<form action="carddetails.do" method="post">
+		<label>Card Number :</label>
+		<input type="number" name="cardnumber"  maxlength="16">
+		<br><br>
+		
+		<label>Card HolderName :</label>
+		<input type="text" name="holdername"  maxlength="20">
+		<br><br>
+		
+		<label>Card ExpireMonth :</label>
+		<input type="number" name="expiremonth"  maxlength="2">
+		<br><br>
+		
+		<label>Card ExpireYear:</label>
+		<input type="number" name="expireyear"  maxlength="4">
+		<br><br>
+		
+		<label>Card CVV :</label>
+		<input type="number" name="cvv"  maxlength="3">
+		<br><br>
+		
+		<input type="submit"  value="submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="
+      http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="Renderer" class="com.capgemini.spring.renderer.MessageRenderer">
+		<!--setter injuction using xml congiguration-->
+		<property name="messageProvider" ref="message"/>
+
+		<!--Constructor injuction using xml congiguration-->
+		<constructor-arg ref="message"/>
+
+	</bean>
+
+	<bean id="message" class="com.capgemini.spring.provider.HelloWorldMessageProvider"></bean>
+
+
+
+</beans>

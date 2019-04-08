@@ -1,0 +1,81 @@
+2019-03-27 11:58:18 - 1 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception :
+ com.capgemini.bankappjdbc.exceptions.LowbalanceException: You don't have sufficient Funds..!!!!
+	at com.capgemini.bankappjdbc.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:33)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:70)
+2019-03-27 12:00:04 - 0 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception :
+ com.capgemini.bankappjdbc.exceptions.LowbalanceException: You don't have sufficient Funds..!!!!
+	at com.capgemini.bankappjdbc.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:33)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:70)
+2019-03-27 12:24:11 - 0 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception :
+ com.capgemini.bankappjdbc.exceptions.LowbalanceException: You don't have sufficient Funds..!!!!
+	at com.capgemini.bankappjdbc.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:33)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:70)
+
+ 2019-03-27 12:27:49 - 0 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception :
+ com.capgemini.bankappjdbc.exceptions.LowbalanceException: You don't have sufficient Funds..!!!!
+	at com.capgemini.bankappjdbc.service.impl.BankAccountServiceImpl.withdraw(BankAccountServiceImpl.java:33)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:70)
+
+ 2019-03-27 17:51:27 - 1 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception: 
+ com.capgemini.bankappjdbc.exceptions.BankAccountNotFoundException: No Account Available with this Id...!!
+	at com.capgemini.bankappjdbc.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:172)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:69)
+
+ 2019-03-27 17:54:54 - 0 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception :
+ com.capgemini.bankappjdbc.exceptions.BankAccountNotFoundException: No Account Available with this Id...!!
+	at com.capgemini.bankappjdbc.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:172)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:154)
+
+ 2019-03-27 17:55:21 - 27010 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception: 
+ com.capgemini.bankappjdbc.exceptions.BankAccountNotFoundException: No Account Available with this Id...!!
+	at com.capgemini.bankappjdbc.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:172)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:69)
+
+ 2019-03-27 17:55:35 - 40117 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception
+ com.capgemini.bankappjdbc.exceptions.BankAccountNotFoundException: No Account Available with this Id...!!
+	at com.capgemini.bankappjdbc.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:172)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:128)
+
+ 2019-03-28 09:20:31 - 0 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception: 
+ com.capgemini.bankappjdbc.exceptions.BankAccountNotFoundException: No Account Available with this Id...!!
+	at com.capgemini.bankappjdbc.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:172)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:67)
+
+ 2019-03-28 10:10:22 - 1 -[main] ERROR com.capgemini.bankappjdbc.client.BankAccountClient  - Exception
+ com.capgemini.bankappjdbc.exceptions.BankAccountNotFoundException: No Account Available with this Id...!!
+	at com.capgemini.bankappjdbc.impl.BankAccountDaoImpl.findAccountId(BankAccountDaoImpl.java:172)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:126)
+
+ 2019-03-28 11:41:20 - 1 -[main] ERROR com.capgemini.bankappjdbc.util.DataBaseUtil  - SQL Exception : 
+ com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Connection.close() has already been called. Invalid operation in this state.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.getMutex(ConnectionImpl.java:3015)
+	at com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1521)
+	at com.capgemini.bankappjdbc.util.DataBaseUtil.commit(DataBaseUtil.java:38)
+	at com.capgemini.bankappjdbc.service.impl.BankAccountServiceImpl.addNewBankAccount(BankAccountServiceImpl.java:104)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:56)
+
+ 2019-03-28 11:44:03 - 0 -[main] ERROR com.capgemini.bankappjdbc.util.DataBaseUtil  - SQL Exception : 
+ com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Connection.close() has already been called. Invalid operation in this state.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.getMutex(ConnectionImpl.java:3015)
+	at com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1521)
+	at com.capgemini.bankappjdbc.util.DataBaseUtil.commit(DataBaseUtil.java:38)
+	at com.capgemini.bankappjdbc.service.impl.BankAccountServiceImpl.addNewBankAccount(BankAccountServiceImpl.java:104)
+	at com.capgemini.bankappjdbc.client.BankAccountClient.main(BankAccountClient.java:56)

@@ -21,7 +21,7 @@ public class SerializationDemo {
 		
 		objectOutputStream.writeObject(account);
 		objectOutputStream.close();
-		
+		System.out.println();
 		
 		FileInputStream fileInputStream=new FileInputStream("account.ser");
 		ObjectInputStream inputStream=new ObjectInputStream(fileInputStream);

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to MMS Banking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><b>MMs Bank</b></a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="newaccount.html">Open New Account</a></li>
+				<li><a href="withdraw.html">Withdraw</a></li>
+				<li><a href="deposite.html">Deposit</a></li>
+				<li><a href="transfer.html">Fund Transfer</a></li>
+				<li><a href="searchaccount.html">Search Account</a></li>
+				<li><a href="checkbalance.html">Check Balance</a></li>
+				<li><a href="allaccounts.html">Display All Account Details</a></li>
+				<li><a href="deleteaccount.html">Delete Account</a></li>
+				<li><a href="updateaccount.html">Update Account Details</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="container">
+			<h4>
+				Fill the form to open<b> New Account</b>
+			</h4>
+			<form action="openNewBankAccount.do" method="post">
+				<br>
+				<br>
+				<br>
+				<div class="form-group">
+					<label for="name">Customer Name:</label> <input type="text"
+						class="form-control" id="text" placeholder="Enter Name"
+						name="name" required onblur="myfunc()">
+				</div>
+				<div>
+					<label for="account type">Account Type:</label>
+					&nbsp;&nbsp;&nbsp;&nbsp; <select class="form-control"
+						name="account_type">
+						<option value="">--select--</option>
+						<option value="SAVING">Saving</option>
+						<option value="CURRENT">Current</option>
+					</select>
+
+				</div>
+				<div class="form-group">
+					<br> <label for="Contact">Account Balance:</label> <input
+						type="number" class="form-control" id="number"
+						placeholder="Enter Balance" name="balance" maxlength="10" required>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-primary">Open New
+					Account</button>
+			</form>
+
+		</div>
+
+	</div>
+</body>
+
+
+<script>
+	function mypop() {
+		alert("New Account Opened Successful");
+	}
+</script>
+</html>
